@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Support Agreement - Weny Photo Editor</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    fontFamily: {
+                        inter: ['Inter', 'sans-serif'],
+                    },
+                    colors: {
+                        primary: '#6366F1',
+                        secondary: '#EC4899',
+                        darkbg: '#0F172A',
+                        cardbg: '#1E293B',
+                        highlight: '#22D3EE'
+                    },
+                    backgroundImage: {
+                        'gradient-glow': 'linear-gradient(135deg, #6366F1 0%, #EC4899 50%, #22D3EE 100%)',
+                    }
+                }
+            }
+        }
+    </script>
+    <style type="text/tailwindcss">
+        @layer utilities {
+            .text-gradient {
+                background-clip: text;
+                -webkit-background-clip: text;
+                -webkit-text-fill-color: transparent;
+            }
+            .glass-card{
+                background: rgba(30, 41, 59, 0.65);
+                backdrop-filter: blur(12px);
+                border: 1px solid rgba(255,255,255,0.08);
+            }
+            .scrollbar-hide::-webkit-scrollbar {
+                display: none;
+            }
+        }
+    </style>
+</head>
+<body class="font-inter bg-darkbg min-h-screen text-slate-100 overflow-x-hidden">
+    <!-- Decorative Background Orbs -->
+    <div class="fixed -top-40 -right-40 w-96 h-96 bg-primary/20 rounded-full blur-3xl"></div>
+    <div class="fixed top-1/3 -left-40 w-80 h-80 bg-secondary/15 rounded-full blur-3xl"></div>
+    <div class="fixed -bottom-40 right-1/4 w-72 h-72 bg-highlight/10 rounded-full blur-3xl"></div>
+
+    <div class="relative z-10 max-w-4xl mx-auto px-5 py-12 md:py-20">
+        <!-- Header Section -->
+        <header class="mb-12 text-center">
+            <div class="inline-block p-1 rounded-xl bg-gradient-glow mb-6">
+                <div class="glass-card rounded-lg px-8 py-4">
+                    <h1 class="text-[clamp(1.8rem,4vw,2.8rem)] font-bold bg-gradient-glow text-gradient">
+                        Weny Support Agreement
+                    </h1>
+                </div>
+            </div>
+            <p class="text-slate-400 text-lg">Effective Date: September 4, 2026</p>
+        </header>
+
+        <!-- Main Content Card -->
+        <main class="glass-card rounded-3xl p-7 md:p-12 space-y-10 shadow-2xl">
+            <section>
+                <h2 class="text-2xl font-semibold text-highlight mb-4">1. Introduction</h2>
+                <p class="leading-relaxed text-slate-300">
+                    This Support Agreement outlines the functional, user‑experience, and service‑related terms for your use of Weny, the creative outdoor and travel portrait photo‑editing mobile application. Weny is designed to empower you to transform your images with stunning AI‑generated sky overlays including aurora effects, golden‑hour lighting, meteor showers, rainbow skies and many other atmospheric visual styles. By accessing, launching, editing photos, or generating AI‑enhanced artwork within our app, you acknowledge that you have read, understood, and agree to all terms laid out inside this support agreement. This document is not a formal legal contract, but a descriptive statement explaining how our features, AI workflows, image processing workflows, and user controls operate when you interact with Weny.
+                </p>
+            </section>
+
+            <section>
+                <h2 class="text-2xl font-semibold text-highlight mb-4">2. Application Feature Overview</h2>
+                <p class="leading-relaxed text-slate-300 mb-3">
+                    Weny provides a comprehensive toolkit for creative sky‑replacement photo editing. Our core feature‑set includes the ability to select source photographs directly from your device image library or capture new shots using your built‑in camera. You can browse our curated sky‑effect gallery to discover inspirational looks, preview different atmospheric styles, then manually fine‑tune image‑blend intensity, lighting levels, and visual opacity to achieve a seamless, natural‑looking final photograph.
+                </p>
+                <p class="leading-relaxed text-slate-300 mb-3">
+                    Our interactive before‑and‑after draggable comparison slider allows instant side‑by‑side review between your unmodified original photo and your newly AI‑transformed version. Completed artwork can be safely saved inside your private, local‑only Vault storage space, or exported directly to your device’s system photo gallery. Additional configurable settings cover lighting adjustments, blend‑mode controls, and haptic feedback preferences to customize your editing workflow.
+                </p>
+            </section>
+
+            <section>
+                <h2 class="text-2xl font-semibold text-highlight mb-4">3. AI Service Connection & Processing Information</h2>
+                <p class="leading-relaxed text-slate-300 mb-3">
+                    Weny connects to our dedicated AI generation interface located at the endpoint: <span class="text-primary font-medium">https://grsai.com/.ai</span>. This external AI‑powered service handles all sky‑overlay generation and visual‑effect rendering tasks requested from inside the mobile application.
+                </p>
+                <p class="leading-relaxed text-slate-300">
+                    Before any selected photograph is transmitted to our AI creation service for processing, Weny will always request your explicit approval. No image upload or AI‑rendering workflow will begin without your active, intentional consent on the first time you trigger this feature. At any moment during an active AI generation task, you retain full permission to cancel, pause, or stop the ongoing photo‑transformation process, and no further data will be sent to our AI server once you terminate the operation.
+                </p>
+            </section>
+
+            <section>
+                <h2 class="text-2xl font-semibold text-highlight mb-4">4. User Data & Image Handling Guidelines</h2>
+                <p class="leading-relaxed text-slate-300 mb-3">
+                    Protecting your creative content and personal privacy is one of our highest priorities while you use Weny. This section describes our data‑handling practices for photo files and device‑related information:
+                </p>
+                <ul class="list-disc pl-6 space-y-3 text-slate-300 leading-relaxed">
+                    <li>Weny will never collect, store, or track your real‑time geographic or device location data at any point during app usage.</li>
+                    <li>Weny does not scan, extract, collect, or save facial recognition, face‑mapping, or biometric facial data from any of your uploaded or edited photographs.</li>
+                    <li>Original source photographs remain stored locally on your own device. Your private Vault gallery is saved to local storage only and is not automatically synced to remote cloud servers.</li>
+                    <li>Photos you choose to submit for AI sky‑effect generation are only temporarily transmitted to our AI processing endpoint for the single purpose of rendering your requested sky visual effect. Once image processing completes, we do not retain copies of your submitted source photos on our AI service servers.</li>
+                </ul>
+            </section>
+
+            <section>
+                <h2 class="text-2xl font-semibold text-highlight mb-4">5. Your User Controls & Feature‑Management Rights</h2>
+                <p class="leading-relaxed text-slate-300 mb-3">
+                    You are always in full command of every AI‑editing workflow you start within Weny. Beyond being able to cancel active AI generation jobs, you can adjust, disable, or re‑enable AI‑sky generation functionality whenever you want through your in‑app settings menu. You can delete finished edited images or original source copies stored in your private Vault at any time with no restrictions.
+                </p>
+                <p class="leading-relaxed text-slate-300">
+                    You maintain full ownership and creative rights over all photographs you edit and export using our sky‑effect tools. This support agreement does not transfer any copyright of your original travel, outdoor or portrait photos to the Weny application or our AI service provider.
+                </p>
+            </section>
+
+            <section>
+                <h2 class="text-2xl font-semibold text-highlight mb-4">6. Feature Availability & Service‑Related Support</h2>
+                <p class="leading-relaxed text-slate-300">
+                    We continuously work to maintain stable connections between the Weny mobile client and our https://grsai.com/.ai AI rendering service. On rare occasions, AI‑generation features may experience temporary delays or brief interruptions due to server maintenance, network conditions, or external service updates. Should you run into unexpected behavior, rendering failures, visual glitches, or workflow‑related bugs, you may reach out to our product‑support channel to submit feedback, share feature suggestions, or report technical difficulties with our sky‑editing tools.
+                </p>
+            </section>
+
+            <section>
+                <h2 class="text-2xl font-semibold text-highlight mb-4">7. Updates to This Support Agreement</h2>
+                <p class="leading-relaxed text-slate-300">
+                    We reserve the ability to refresh, expand, or revise the descriptions inside this support agreement whenever we introduce new photo‑editing features, upgrade our AI rendering pipeline, or adjust user‑control workflows. Whenever meaningful changes are made, we will post the revised document inside‑app and update the listed effective date. Continued use of Weny’s creative sky‑replacement tools after an update indicates you accept the newly published support‑agreement content.
+                </p>
+            </section>
+
+            <div class="pt-6 border-t border-slate-700 text-center">
+                <p class="text-slate-400">Last updated: September 4, 2026 • Weny Creative Photo Editor</p>
+            </div>
+        </main>
+
+        <!-- Footer Space -->
+        <footer class="mt-14 text-center text-slate-500 text-sm">
+            <p>Thank you for creating beautiful travel and outdoor portraits with Weny</p>
+        </footer>
+    </div>
+</body>
+</html>
